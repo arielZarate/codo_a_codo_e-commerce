@@ -1,0 +1,332 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "thunder-grupo21",
+    "collectionId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+    "dateExported": "2024-07-08T03:58:39.650Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "b8c95688-11e7-4b50-ab77-e596b82e8236",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-07-06T00:25:15.112Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "8c5282db-de18-41e6-ae22-c4d42c064510",
+            "name": "categories",
+            "containerId": "",
+            "created": "2024-07-06T00:25:44.066Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "91983e2b-d1f1-4322-a939-f10212577f0f",
+            "name": "productos",
+            "containerId": "",
+            "created": "2024-07-06T00:42:09.064Z",
+            "sortNum": 25000
+        },
+        {
+            "_id": "0a2957cb-4dc4-4fac-944b-1c180429d2bc",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-07-07T18:19:46.854Z",
+            "sortNum": 35000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "26b7da54-5632-496c-bd46-53f3156ab0ed",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "b8c95688-11e7-4b50-ab77-e596b82e8236",
+            "name": "post",
+            "url": "http://localhost:3000/api/usuarios/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-26T18:52:04.147Z",
+            "modified": "2024-07-06T23:08:57.302Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n\"nombre\":\"ariel\",\n\"apellido\":\"zarate\",\n \"domicilio\":\"pje felix olmedo 6621\",\n  \"telefono\":\"3512266656\",\n \"email\":\"juancitoto@gmail.com\",\n \"contrasena\":\"admin\"\n\n\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ff0f8bd5-aab4-4329-b690-ac730264fe1e",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "0a2957cb-4dc4-4fac-944b-1c180429d2bc",
+            "name": "login",
+            "url": "http://localhost:3000/api/iniciarSesion/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-07T16:09:22.123Z",
+            "modified": "2024-07-07T20:13:13.324Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"email\":\"ariel@gmail.com\",\n   \"contrasena\":\"123456\"\n  \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7d3f9a3e-3a3d-4eee-90e5-a7f54a176a38",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "b8c95688-11e7-4b50-ab77-e596b82e8236",
+            "name": "get ",
+            "url": "http://localhost:3000/api/usuarios/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-26T19:13:11.781Z",
+            "modified": "2024-07-06T02:50:21.741Z",
+            "headers": []
+        },
+        {
+            "_id": "4672e052-8e5b-4741-b981-88682c16f9a6",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "b8c95688-11e7-4b50-ab77-e596b82e8236",
+            "name": "delete",
+            "url": "http://localhost:3000/api/usuarios/14",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-06-26T19:40:06.367Z",
+            "modified": "2024-07-06T02:50:28.200Z",
+            "headers": []
+        },
+        {
+            "_id": "7c69b977-87ec-4eef-a15e-f9747b297576",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "b8c95688-11e7-4b50-ab77-e596b82e8236",
+            "name": "put",
+            "url": "http://localhost:3000/api/usuarios/15",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-06-26T20:15:47.915Z",
+            "modified": "2024-07-06T02:50:34.280Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \n\"nombre\":\"john\",\n\"apellido\":\"connor\",\n \"domicilio\":\"av girls 1200\",\n \"email\":\"jhonconor@gmail.com\",\n \"telefono\":\"01111111111\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "588b37a2-bf4a-452c-a714-6913674840ff",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "8c5282db-de18-41e6-ae22-c4d42c064510",
+            "name": "get",
+            "url": "http://localhost:3000/api/categorias/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-07-06T00:25:53.366Z",
+            "modified": "2024-07-06T02:50:42.470Z",
+            "headers": []
+        },
+        {
+            "_id": "20bc22cf-686f-4072-9d2f-7afa26cfb384",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "91983e2b-d1f1-4322-a939-f10212577f0f",
+            "name": "get",
+            "url": "http://localhost:3000/api/productos/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-07-06T00:42:09.064Z",
+            "modified": "2024-07-06T02:51:31.746Z",
+            "headers": []
+        },
+        {
+            "_id": "8dcda700-1c39-44a2-aafd-a57b522b44d4",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "8c5282db-de18-41e6-ae22-c4d42c064510",
+            "name": "get by id",
+            "url": "http://localhost:3000/api/categorias/2",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-07-06T00:34:28.945Z",
+            "modified": "2024-07-06T02:50:53.185Z",
+            "headers": []
+        },
+        {
+            "_id": "2c64c4b9-c397-4442-a45c-f4db7cd4a085",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "91983e2b-d1f1-4322-a939-f10212577f0f",
+            "name": "get by id",
+            "url": "http://localhost:3000/api/productos/4",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-07-06T00:42:09.065Z",
+            "modified": "2024-07-06T02:51:46.679Z",
+            "headers": []
+        },
+        {
+            "_id": "6bc75d22-1731-40c3-8b8f-6c8849058110",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "8c5282db-de18-41e6-ae22-c4d42c064510",
+            "name": "update categories",
+            "url": "http://localhost:3000/api/categorias/8",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-07-06T00:35:06.511Z",
+            "modified": "2024-07-06T02:51:03.728Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombreCategoria\":\"pantalones cortos\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5418f37b-f5f4-4b63-8032-bbef61dd6cb7",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "91983e2b-d1f1-4322-a939-f10212577f0f",
+            "name": "update categories",
+            "url": "http://localhost:3000/api/productos/8",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-07-06T00:42:09.066Z",
+            "modified": "2024-07-06T02:51:52.022Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Camiseta Deportiva\",\n  \"descripcion\": \"Camiseta deportiva para actividades físicas.\",\n  \"precio\": 18.99,\n  \"id_categoria\": 6,\n  \"foto\": \"https://acdn.mitiendanube.com/stores/001/333/138/products/modelo-3-v-72a285c7533698d466169637329603551-af91bbb09be6c5adab16963733944895-480-0.jpg\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "424f3c43-8fe8-40fd-b6d0-e4d75b40cb8f",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "8c5282db-de18-41e6-ae22-c4d42c064510",
+            "name": "delete categories",
+            "url": "http://localhost:3000/api/categorias/3",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-07-06T00:38:16.738Z",
+            "modified": "2024-07-06T02:51:09.308Z",
+            "headers": []
+        },
+        {
+            "_id": "0e46197f-b2cd-4f72-8748-b78105f628d5",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "91983e2b-d1f1-4322-a939-f10212577f0f",
+            "name": "delete categories",
+            "url": "http://localhost:3000/api/productos/8",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-07-06T00:42:09.067Z",
+            "modified": "2024-07-06T02:52:03.321Z",
+            "headers": []
+        },
+        {
+            "_id": "4976784f-33f2-46de-bcb6-69304125db6e",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "8c5282db-de18-41e6-ae22-c4d42c064510",
+            "name": "post categories",
+            "url": "http://localhost:3000/api/categorias/",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-07-06T00:39:42.755Z",
+            "modified": "2024-07-06T02:51:19.670Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombreCategoria\":\"pantalones cortos\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a81abe81-0003-484b-8cf8-9d839b392ec1",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "91983e2b-d1f1-4322-a939-f10212577f0f",
+            "name": "post categories",
+            "url": "http://localhost:3000/api/productos/",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-07-06T00:42:09.068Z",
+            "modified": "2024-07-06T02:52:10.427Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Camiseta Deportiva\",\n  \"descripcion\": \"Camiseta deportiva para actividades físicas.\",\n  \"precio\": 18.99,\n  \"id_categoria\": 6,\n  \"foto\": \"https://acdn.mitiendanube.com/stores/001/333/138/products/modelo-3-v-72a285c7533698d466169637329603551-af91bbb09be6c5adab16963733944895-480-0.jpg\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "334ee378-00ce-4993-9969-ce7187ba66c7",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "",
+            "name": "productosByCategory",
+            "url": "http://localhost:3000/api/productosXcategoria/2",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-07-06T01:57:53.414Z",
+            "modified": "2024-07-06T21:57:16.857Z",
+            "headers": []
+        },
+        {
+            "_id": "6e292f28-67d3-4d35-a8d0-6f08e09d771f",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "",
+            "name": "crearContacto",
+            "url": "http://localhost:3000/api/contactos/",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-07-06T20:44:15.713Z",
+            "modified": "2024-07-06T20:47:48.534Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Federico\",\n  \"apellido\": \"Gonzalez\",\n  \"email\": \"f.gonzalez@gmail.com\",\n  \"telefono\": \"23235235\",\n  \"descripcion\": \"Esta es una descripción del contacto.\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "b4d6bb35-062c-485b-a8de-60b49d46223d",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "",
+            "name": "getContactos",
+            "url": "http://localhost:3000/api/contactos/",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-07-06T21:26:32.504Z",
+            "modified": "2024-07-06T21:26:35.859Z",
+            "headers": []
+        },
+        {
+            "_id": "aa06439e-19fc-425b-a72a-68688d3c9002",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "b8c95688-11e7-4b50-ab77-e596b82e8236",
+            "name": "getPerfil",
+            "url": "http://localhost:3000/api/perfil/",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-07-07T18:04:53.024Z",
+            "modified": "2024-07-07T18:05:06.181Z",
+            "headers": []
+        },
+        {
+            "_id": "6a94b47b-0ac9-4df0-8338-9890ec7aebc3",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "0a2957cb-4dc4-4fac-944b-1c180429d2bc",
+            "name": "cerrarSesion",
+            "url": "http://localhost:3000/api/cerrarSesion/",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-07-07T18:20:08.052Z",
+            "modified": "2024-07-07T18:21:20.518Z",
+            "headers": []
+        },
+        {
+            "_id": "cac595bc-0982-4c1b-9c05-05b4425ed745",
+            "colId": "27510aa1-831d-4276-9f38-8dd6259044e6",
+            "containerId": "0a2957cb-4dc4-4fac-944b-1c180429d2bc",
+            "name": "perfil",
+            "url": "http://localhost:3000/api/perfil/",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-07-07T18:25:47.348Z",
+            "modified": "2024-07-07T18:25:54.800Z",
+            "headers": []
+        }
+    ],
+    "ref": "OuYs_OzrUM-3hjdfrbmQL2QK0BtDHaFA4F7LJO-rQLmLHxLHovvoFaA3aGkO2C8e2NwBSWDRIykDITqr0hWwYQ"
+}

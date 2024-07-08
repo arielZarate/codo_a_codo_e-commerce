@@ -1,0 +1,235 @@
+body,
+html {
+  font-family: "Montserrat", sans-serif !important;
+  height: 100%;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* variables */
+
+:root {
+  --color_verde: #007f73;
+  --color_verde_claro: #4ccd99;
+  --color_negro: black;
+  --color_blanco: whitesmoke;
+  --color_gris_oscuro: rgb(77, 76, 76);
+}
+
+/*====================section 1================*/
+.section1 {
+  background-image: url("./img/section1.jpeg");
+  height: 100%;
+  position: relative;
+  opacity: 0.97;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo {
+  height: 15%;
+}
+
+.navbar-nav {
+  margin-left: auto; /* Empuja los elementos del navbar a la derecha */
+}
+
+/*stilos del boton para que se vea a la derecha y blanco*/
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Estilos para los enlaces con efecto */
+.efecto {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.efecto:hover {
+  transform: scale(1.1);
+  color: var(--color_verde);
+}
+
+/* Quitar el icono de flecha de dropdown */
+.avatar-dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Estilo para el menú desplegable personalizado */
+.custom-dropdown-menu {
+  background-color: #f8f9fa !important; /* Gris claro */
+  border: none !important; /* Sin borde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Sombra ligera */
+}
+
+.custom-dropdown-menu .dropdown-item {
+  color: #333 !important; /* Color de texto */
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+  background-color: #e7ba17 !important; /* Color de fondo al pasar el ratón */
+}
+
+/**=========section 2============*/
+.section2 {
+  background-color: var(--color_blanco);
+  width: 100%;
+  min-height: 250px;
+  padding-top: 10px;
+  margin: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "content";
+}
+
+.content {
+  grid-area: content;
+  text-align: center;
+  margin: 5%;
+}
+
+h2 {
+  color: var(--color_verde);
+  margin: 0px;
+}
+
+p {
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/*fin de section2*/
+
+.logo {
+  width: 200px;
+}
+
+/**==============section 4=============*/
+.section4 {
+  background-image: url("./img/formulario.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.section4-content {
+  margin: auto;
+  width: 50%;
+}
+
+p {
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.section3 > div {
+  text-align: center;
+  margin: 10%;
+}
+
+.section3-titles {
+  font-size: 1.2rem;
+  margin: 10px;
+  color: #007f73;
+  padding: 5px;
+}
+
+/*============ Footer ======================*/
+
+footer {
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+footer > div {
+  margin: 5px;
+}
+
+.iconos {
+  height: 4vh;
+}
+
+/*productos*/
+
+/* Estilo para las tarjetas de producto */
+.card {
+  width: 100%; /* Ancho máximo de la tarjeta */
+  height: 100%; /* Altura máxima de la tarjeta */
+  margin-bottom: 8px; /* Espacio entre tarjetas */
+  border: 1px solid #e2e2e2; /* Borde ligero alrededor de cada tarjeta */
+  border-radius: 8px; /* Bordes redondeados para las tarjetas */
+  overflow: hidden; /* Para asegurar que la imagen no desborde */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card img {
+  width: 100%; /* Ajustar imagen al ancho máximo de la tarjeta */
+  height: 250px; /* Altura fija para la imagen */
+  object-fit: cover; /* Ajustar la imagen manteniendo su relación de aspecto */
+}
+
+/* Estilo para el contenedor de productos */
+#productos-container {
+  padding: 15px; /* Espaciado interno */
+}
+
+.card-body {
+  padding: 10px; /* Espaciado interno */
+}
+
+.card-title {
+  color: #424040; /* Color del texto negro */
+  font-weight: 600; /* Grosor de la fuente semibold */
+  font-size: 1rem; /* Tamaño de la fuente */
+  margin-bottom: 2px; /* Espacio inferior */
+}
+
+.card-text {
+  margin-bottom: 5px; /* Espacio inferior entre párrafos */
+  font-size: 0.8rem;
+}
+
+@keyframes animation-mouse-over {
+  from {
+    font-size: 1rem;
+  }
+
+  to {
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 130px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-dropdown-menu {
+    width: 200px; /* Ancho deseado para el menú desplegable */
+  }
+}
